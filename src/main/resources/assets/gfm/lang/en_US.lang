@@ -1,0 +1,6 @@
+item.coin_item.name=5 HUF Coin
+tile.barstool_block.name=Bar stool
+tile.table.name=Table
+tile.Laptop.name=Laptop
+
+itemGroup.tabFurniture=GFM
