@@ -1,7 +1,7 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
+  "modid": "gfm",
+  "name": "GFM",
   "description": "A mod created by Gaborboy95.",
   "version": "${version}",
   "mcversion": "${mcversion}",
