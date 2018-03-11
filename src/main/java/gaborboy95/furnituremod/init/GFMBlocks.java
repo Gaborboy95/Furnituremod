@@ -48,6 +48,7 @@ public class GFMBlocks
     {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
     }
+
     public static void registerBlock(Block block, ItemBlock item)
     {
         RegistrationHandler.BLOCKS.add(block);
