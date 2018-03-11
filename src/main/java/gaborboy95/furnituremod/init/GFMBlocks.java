@@ -35,7 +35,7 @@ public class GFMBlocks
 
     public static void registerBlock(Block block)
     {
-        registerBlock(block);
+        registerBlock(block, new ItemBlock(block));
     }
 
     public static void registerRenders()
