@@ -1,5 +1,6 @@
 {
     "variants": {
-        "normal" : {"model": "gfm:table_planks"}
+      "inventory": {"model": "gfm:table_planks", "y": 45, "x": -20},
+      "normal": {"model": "gfm:table_planks"}
     }
 }

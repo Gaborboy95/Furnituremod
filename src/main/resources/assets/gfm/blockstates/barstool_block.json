@@ -1,4 +1,9 @@
 {
-    "variants": {
-        "normal" : {"model": "gfm:barstool_block"}
+    "variants":
+    {
+        "normal":
+        {
+            "model": "gfm:barstool_block"
+        }
+    }
 }

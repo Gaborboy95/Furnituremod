@@ -17,17 +17,12 @@ import net.minecraft.world.World;
 
 public class BlockTable extends Block
 {
-    public static final PropertyBool BACK = PropertyBool.create("back");
-    public static final PropertyBool FORWARD = PropertyBool.create("forward");
-    public static final PropertyBool LEFT = PropertyBool.create("left");
-    public static final PropertyBool RIGHT = PropertyBool.create("right");
 
     public BlockTable(Material material, SoundType soundType)
     {
         super(material);
         this.setHardness(1.0F);
-        this.setSoundType(soundType);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(BACK, false).withProperty(FORWARD, false).withProperty(LEFT, false).withProperty(RIGHT, false));
+        this.setSoundType(soundType);;
         this.setCreativeTab(Furnituremod.tabFurniture);
     }
 
@@ -60,16 +55,6 @@ public class BlockTable extends Block
     }
 
     @Override
-    public IBlockState getActualState(IBlockState state, IBlockAccess world, BlockPos pos)
-    {
-        boolean back = world.getBlockState(pos.south()).getBlock() == this;
-        boolean forward = world.getBlockState(pos.north()).getBlock() == this;
-        boolean left = world.getBlockState(pos.west()).getBlock() == this;
-        boolean right = world.getBlockState(pos.east()).getBlock() == this;
-        return state.withProperty(BACK, back).withProperty(FORWARD, forward).withProperty(LEFT, left).withProperty(RIGHT, right);
-    }
-
-    @Override
     public int getMetaFromState(IBlockState state)
     {
         return 0;
@@ -79,11 +64,5 @@ public class BlockTable extends Block
     public IBlockState getStateFromMeta(int meta)
     {
         return this.getDefaultState();
-    }
-
-    @Override
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, new IProperty[] { BACK, FORWARD, LEFT, RIGHT });
     }
 }
