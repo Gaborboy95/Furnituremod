@@ -1,6 +1,7 @@
 package gaborboy95.furnituremod.init;
 
 import gaborboy95.furnituremod.Reference;
+import gaborboy95.furnituremod.blocks.BlockBarStool;
 import gaborboy95.furnituremod.blocks.BlockTable;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -20,17 +21,19 @@ import java.util.List;
 
 public class GFMBlocks
 {
-    /* Initial release */
+    /* First steps update */
     public static Block table, barstool;
 
     public static void init()
     {
-        table = new BlockTable(Material.WOOD, SoundType.WOOD).setUnlocalizedName("table_planks").setRegistryName("table_planks");
+        table = new BlockTable(Material.WOOD, SoundType.WOOD).setUnlocalizedName("table_oak").setRegistryName("table_oak");
+        barstool = new BlockBarStool(Material.WOOD).setUnlocalizedName("bar_stool").setRegistryName("bar_stool");
     }
 
     public static void register()
     {
         registerBlock(table);
+        registerBlock(barstool);
     }
 
     public static void registerBlock(Block block)
@@ -41,6 +44,7 @@ public class GFMBlocks
     public static void registerRenders()
     {
         registerRender(table);
+        registerRender(barstool);
     }
 
     @SideOnly(Side.CLIENT)

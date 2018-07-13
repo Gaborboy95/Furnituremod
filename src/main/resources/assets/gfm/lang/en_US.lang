@@ -1,4 +1,4 @@
-tile.barstool_block.name=Bar stool
-tile.table_planks.name=Table
+tile.bar_stool.name=Bar stool
+tile.table_oak.name=Oak table
 
-itemGroup.tabGfmFurniture=GFM
+itemGroup.tabGfmFurniture=Gabor's Furniture Mod

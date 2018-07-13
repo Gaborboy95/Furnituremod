@@ -1,7 +1,7 @@
 [
 {
   "modid": "gfm",
-  "name": "GFM",
+  "name": "Gabor's Furniture Mod",
   "description": "A mod created by Gaborboy95.",
   "version": "${version}",
   "mcversion": "${mcversion}",

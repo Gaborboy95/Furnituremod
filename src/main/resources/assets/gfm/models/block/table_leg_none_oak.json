@@ -1,0 +1,6 @@
+{
+"parent": "gfm:block/table_leg_none",
+"textures": {
+    "0": "blocks/log_oak"
+}
+}
